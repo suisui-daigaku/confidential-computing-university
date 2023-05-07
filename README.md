@@ -1,6 +1,14 @@
 # confidential-computing / trusted-execution-environment university
 
 
+## Competitions 
+
+wppcc隐私计算
+
+星河杯 https://www.datafountain.cn/special/galaxycup2022
+
+iDASH 2022 https://www.anquanke.com/post/id/284269
+
 ## Open Source Projects 
 
 <https://confidentialcomputing.io/projects/current-projects/>
