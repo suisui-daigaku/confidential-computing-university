@@ -1,5 +1,16 @@
 # confidential-computing / trusted-execution-environment university
 
+## File Structure 
+
+```
+Reading --> Note --> Practice --> Lecture 
+```
+
+- Reading: read papers, intel documentation and open-source projects to gain comprehensive knowledge about projects used in production
+- Note: write down any questions and thoughs, find out the common questions/topics  
+- Practice: build a small demo every **每天抄一个小例子**
+- Practice(app): build a small projects based on the demo you have 
+- Lecture: think of there is a chance to host a lecture for new comers, how you will show the blueprint of confidential computing and introduce your achievement and what you have learned in 30 minutes.  
 
 ## Competitions 
 
