@@ -12,6 +12,7 @@ Reading --> Note --> Practice --> Lecture
 - Practice(app): build a small projects based on the demo you have 
 - Lecture: think of there is a chance to host a lecture for new comers, how you will show the blueprint of confidential computing and introduce your achievement and what you have learned in 30 minutes.  
 
+
 ## Competitions 
 
 wppcc隐私计算 https://en.wppcc.net/
