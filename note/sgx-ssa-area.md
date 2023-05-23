@@ -9,6 +9,8 @@ Intel 手册也有这部分的描述 "STATE SAVE AREA (SSA) FRAME"
 
 When an AEX occurs while running in an enclave, the context (namely cpu register values) is saved in the **thread's current SSA frame**, which is pointed to by **TCS.CSSA** (CSSA). 
 
+值得注意的是 OSSA，根据 [Intel手册](https://www.intel.com/content/dam/www/public/us/en/documents/manuals/64-ia-32-architectures-software-developer-vol-3d-part-4-manual.pdf) 这实际上是一个数字，就是 enclave base 的相对位置。
+
 An SSA frame must be **page aligned** (namely 4096 KB for a SSA frame),  it cotains the following 4 main regions. 
 
 - `XSAVE` region: this region contains extened feature register state 
