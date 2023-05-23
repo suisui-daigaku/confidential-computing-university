@@ -5,6 +5,18 @@
 Intel 手册也有这部分的描述 "STATE SAVE AREA (SSA) FRAME"
 
 
+## 一个奇怪的问题
+
+把 SSA 地址在函数刚开始运行的时候，放入到 寄存器 r14 内。
+
+然后保证 LLVM 在编译程序的时候避开 r14, 把编译出来的程序放入 sgx-lkl 运行。
+
+由于我觉得 r14 是 callee-save ，所以即使 musl-libc 没有预留 r14 也不会导致太大问题。
+
+结果有点震撼我，没有预留 r14 的时候，AEX = 2000+ 才会崩溃，而预留了 r14 的时候，AEX=800+ 崩溃。
+
+这证明即使是 callee-save 也会有影响的/
+
 ## State Save Area (SSA) Frame 
 
 When an AEX occurs while running in an enclave, the context (namely cpu register values) is saved in the **thread's current SSA frame**, which is pointed to by **TCS.CSSA** (CSSA). 
